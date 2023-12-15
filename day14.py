@@ -44,6 +44,23 @@ class platform:
         self.rotate_right()  # north faces west
         self.tilt_left()  # tilt when north points west
         self.rotate_right()  # make north face up again
+   #part two starts here 
+    def turn_north_to_left(self):
+        self.rotate_right()
+        self.rotate_right()
+        self.rotate_right()
+        #north now points left
+
+    def cycle(self):
+        self.tilt_left()#tilt north
+        self.rotate_right()
+        self.tilt_left()#tilt east
+        self.rotate_right()
+        self.tilt_left()#tilt south
+        self.rotate_right()
+        self.tilt_left()#tilt west
+        self.rotate_right()
+    #part two ends here
 
     def print(self):
         print()
